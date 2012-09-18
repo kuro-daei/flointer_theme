@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="サッカースクール運営 シンシアノ サッカークラブ スポーツマネジメント 人材紹介業（厚生労働省13-ユ-305403）子育て支援事業 フローレス　ウーマン" />
 <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php wp_head(); ?>
