@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*css import
+-----------------------------------*/
+@import url('XXX.css');
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+/*css reset
+-----------------------------------*/
+html{color:#555555;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+body{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+/*font reset
+-----------------------------------*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+
+/*font size
+-----------------------------------*/
+.f_size11 {font-size:85%;} /*renders 11px */
+.f_size12 {font-size:93%;} /*renders 12px */
+.f_size13 {font-size:100%;} /*renders 13px */
+.f_size14 {font-size:108%;} /*renders 14px */
+.f_size16 {font-size:123.1%;} /*renders 16px */
+.f_size18 {font-size:138.5%;} /*renders 18px */
+.f_size20 {font-size:153.9%;} /*renders 20px */
+.f_size24 {font-size:182%;} /*renders 24px */
+.f_size30 {font-size:230.7%;} /*renders 30px */
+
+/*font color
+-----------------------------------*/
+.f_red{color: #F00;}
+.f_blue{color: #3F79DA;}
+.f_green{color: #090;}
+.f_orenge{color: #F60;}
+.f_yellow{color: #FF0;}
+.f_light_blue{color: #0CF;}
+.f_light_green{color: #0F0;}
+.f_gray{color: #999;}
+.f_white{color: #FFF;}
+.f_black{color: #000;}
+
+/*adjustment
+-----------------------------------*/
+.ptop10{
+	padding-top: 10px;
+}
+
+/*default
+-----------------------------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html,body{
+	height:100%;
+	min-height:100%;
+	width: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF;
+}
+a{
+	color: #2979d2;
+	text-decoration: none;
+}
+strong{
+	font-weight: bold;
+}
+h2{
+	font-weight: bold;
+	color: #bb1c1b;
+	font-size: 123.1%;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #9e9e9e;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+/*layout
+-----------------------------------*/
+#wrapper{
+	padding: 0px;
+	width: 960px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#header{
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+	width: 960px;
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
+}
+#header h1 a{
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+	width: 380px;
+	display: block;
+	text-indent: -9999px;
+}
+#contents{
+	width: 960px;
+	margin-top: 30px;
+}
+#footer{
+	height: 30px;
+	background-image: url(images/footer.png);
+	background-repeat: repeat-x;
+	clear: both;
+	margin-top: 30px;
+}
+
+/*header
+-----------------------------------*/
+#main_visual{
+	height: 300px;
+	width: 960px;
+}
+/*contents
+-----------------------------------*/
+.content_block{
+	clear: both;
+	padding-bottom: 30px;
+}
+.column{
+	float: left;
+	width: 300px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 30px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.column.last_child{
+	margin-right: 0px;
+}
+.content_image{
+	height: 115px;
+	width: 300px;
+	clear: both;
+	display: block;
+}
+.column p{
+	margin-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 1.4em;
+}
+.second_page_wrapper{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.second_page_wrapper h2{
+	font-size:215.4%;
+	margin: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	color: #555;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+.second_page_wrapper h3{
+	font-size: 123.1%;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.second_page_wrapper p{
+	padding-bottom: 20px;
+}
+p .image_right{
+	float: right;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+/*footer
+-----------------------------------*/
+p.copyright{
+	color: #FFF;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 93%;
+}
+
+
+/* Twitter
+-----------------------------------*/
+
+.twitter div {
+    padding:0;
+}
+
+.twitter ul li {
+    margin-bottom:5px;
+}
+
+.twitter .follow-button,
+.twitter .xavisys-link {
+    margin:0 10px 10px 25px;
+}
+
+.twitter .entry-meta {
+    display:block;
+    font-size:80%;
+}
+
+.twitter .intent-meta a {
+    background: url(images/everything-spritev2.png); /** from Twitter ressources */
+    display: inline-block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+.twitter .intent-meta a.in-reply-to {
+    background-position: 0 center;
+}
+.twitter .intent-meta a:hover.in-reply-to {
+    background-position: -16px center;
+}
+.twitter .intent-meta a.favorite {
+    background-position: -32px center;
+}
+.twitter .intent-meta a:hover.favorite {
+    background-position: -48px center;
+}
+.twitter .intent-meta a.retweet {
+    background-position: -80px center;
+}
+.twitter .intent-meta a:hover.retweet {
+    background-position: -96px center;
+}
