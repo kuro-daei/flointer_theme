@@ -16,7 +16,7 @@
 <!--******************end header-->
 
 <!--mail visual-->
-<div id="main_visual"><img src="<?php bloginfo('template_url'); ?>/images/main_vidual.png" width="960" height="300" alt="イメージ" /></div>
+<div id="main_visual"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></div>
 <!--end mail visual-->
 
 
