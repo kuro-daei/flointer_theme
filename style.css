@@ -76,6 +76,9 @@ a{
 strong{
 	font-weight: bold;
 }
+em{
+	font-style: italic;
+}
 h2{
 	font-weight: bold;
 	color: #bb1c1b;
@@ -123,7 +126,7 @@ h2{
 
 .main_contents{
 	float: left;
-	width: 650px;
+	width: 630px;
 	margin-right: 10px;
 }
 
@@ -220,11 +223,11 @@ div#sidebar {
 	float: right}       /*右側配置に指定*/
 
 	div#sidebar h2  {
-		font-size: 0.75em;  /*見出しの文字サイズを0.75emに指定*/
+		font-size: 1.0em;  /*見出しの文字サイズを1.0emに指定*/
 		color: #ffffff;     /*見出しの文字色を白色に指定*/
 		background-color: #0c8bcd;  /*背景色を青色に指定*/
 		border-radius: 3px; /*背景を3pxの角丸に指定*/
-		padding: 2px 10px;  /*バーの内側の上下余白を2px、左右余白を10pxに指定*/
+		padding: 5px 10px;  /*バーの内側の上下余白を5px、左右余白を10pxに指定*/
 		margin: 0}          /*周りの余白を削除*/
 
 /* Twitter
@@ -235,7 +238,6 @@ div#sidebar {
 }
 
 .widget_twitter ul li {
-	margin-bottom:5px;
 }
 
 .widget_twitter .follow-button,
@@ -245,11 +247,13 @@ div#sidebar {
 
 .widget_twitter .entry-meta {
 	display:block;
-	font-size:80%;
+	font-size:93%;
+}
+.widget_twitter .entry-meta a{
+	font-weight: normal;
 }
 
 .widget_twitter .intent-meta a {
-	background: url(images/everything-spritev2.png); /** from Twitter ressources */
 	display: inline-block;
 	height: 16px;
 	text-indent: -9999px;
@@ -276,6 +280,10 @@ div#sidebar {
 
 /* Contents
 -----------------------------------*/
+h2.entry-title{
+	padding-top: 0px;
+	line-height: 1.0em;
+}
 
 .entry-title,
 .entry-header .entry-meta {
@@ -311,14 +319,18 @@ div#sidebar {
 }
 .entry-content,
 .entry-summary {
-	padding: 1.625em 0 0;
+	padding-top: 1.625em;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	line-height: 1.4em;
 }
 .entry-content p{
 	margin-bottom: 20px;
 }
 
 .entry-content h1{
-	font-size: 140%;
+	font-size: 138.5%;
 	color: #000;
 	font-weight: bold;
 	margin: 0 0 .8125em;
@@ -326,7 +338,7 @@ div#sidebar {
 	border: 0;
 }
 .entry-content h2{
-	font-size: 120%;
+	font-size: 123.1%;
 	color: #000;
 	font-weight: bold;
 	margin: 0 0 .8125em;
@@ -334,9 +346,16 @@ div#sidebar {
 	border: 0;
 }
 .entry-content h3 {
+	font-size: 108%;
+	font-weight: bold;
+	margin: 0 0 .8125em;
+	padding: 0;
+	border: 0;
+}
+.entry-content h4 {
 	font-size: 100%;
-	letter-spacing: 0.1em;
-	line-height: 2.6em;
+	font-weight: bold;
+	margin: 0 0 .8125em;
 	padding: 0;
 	border: 0;
 }
@@ -347,15 +366,15 @@ div#sidebar {
 	width: 100%;
 }
 .entry-content th {
-	color: #666;
-	font-weight: 500;
+	font-weight: bold;
 	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	text-transform: uppercase;
+	background-color: #E1F7CA;
+	border: 1px solid #ccc;
+	padding: 5px;
 }
 .entry-content td {
-	border-top: 1px solid #ddd;
-	padding: 6px 10px 6px 0;
+	padding: 5px;
+	border: 1px solid #ccc;
 }
 .entry-content #s {
 	width: 75%;
@@ -368,18 +387,61 @@ div#sidebar {
 .entry-content ul ul,
 .entry-content ol ol {
 	display: list-item;
-	margin-left: 20px;
+	margin-left: -3px;
 	margin-bottom: 0;
 }
 .entry-content ul li{
 	display: list-item;
 	list-style-position: outside;
-	list-style-type: square;
+	list-style-type: disc;
 	margin-left: 20px;
+}
+.entry-content ul li ul li{
+	list-style-type: circle;
+	list-style-position: outside;
 }
 .entry-content ol li{
 	display: list-item;
 	list-style-position: outside;
 	list-style-type: decimal;
 	margin-left: 20px;
+}
+div#sidebar h2.widget-title{
+	background-image: url(images/footer.png);
+	background-repeat: repeat-x;
+	border-radius: 0px 0px 0px 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+div#sidebar ul{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+div#sidebar li{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+div#sidebar li.page_item{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	background-image: url(images/list_mark01.png);
+	background-repeat: no-repeat;
+	background-position: 10px 4px;
+}
+div#sidebar li span.entry-content{
+	margin: 0px;
+	padding: 0px;
 }
