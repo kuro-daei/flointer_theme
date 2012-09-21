@@ -236,8 +236,12 @@ div#sidebar {
 .widget_twitter div {
 	padding:0;
 }
-
+.widget_twitter ul {
+	padding-bottom: 20px;
+}
 .widget_twitter ul li {
+	border-bottom: 1px solid #DDDDDD;
+    padding: 5px 10px;
 }
 
 .widget_twitter .follow-button,
@@ -317,7 +321,11 @@ h2.entry-title{
 .entry-meta a {
 	font-weight: bold;
 }
-.entry-content,
+..entry-content{	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	line-height: 1.4em;}
 .entry-summary {
 	padding-top: 1.625em;
 	padding-right: 10px;
